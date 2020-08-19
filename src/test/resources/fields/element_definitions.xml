@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../fields/xsd/element_rules.xsd">
+    <Page name="Главная страница">
+        <Collection name="Menu" locator="//ul[@class='main-menu']//li">
+            <Button name="name" locator="."/>
+        </Collection>
+        <Collection name="Submenu" locator="//div[@class='menu-wrapper']//a[@class='menu-link main-menu__link']">
+            <Button name="name" locator="."/>
+        </Collection>
+    </Page>
+    <Page name="IpotekaPage">
+        <Button name="ОСТАВИТЬ ЗАЯВКУ" locator="//div[@class='b-intro__block-content']//a[text()='Оставить заявку']"
+                isLoaded="true"/>
+    </Page>
+    <Page name="SubmitPage">
+        <StaticText name="Заполнение заявки" locator="//div[text()='Заполнение заявки']" isLoaded="true"/>
+        <TextInput name="E-mail"/>
+        <TextInput name="Отчество"/>
+        <TextInput name="Фамилия"/>
+        <TextInput name="Телефон" customType="ru.aplana.autotests.CustomElements.CustomInput"/>
+        <TextInput name="Имя"/>
+        <TextInput name="Дата рождения" customType="ru.aplana.autotests.CustomElements.CustomInput"/>
+        <TextInput name="Место рождения"/>
+        <TextInput name="Серия и номер паспорта"/>
+        <TextInput name="Код подразделения"/>
+        <TextInput name="Дата выдачи" customType="ru.aplana.autotests.CustomElements.CustomInput"/>
+        <TextInput name="Кем выдан"/>
+        <TextInput name="Адрес регистрации"/>
+        <TextInput name="Ежемесячный доход"/>
+        <ComboBox name="Выберите вариант" locator="//*[text()='Могу подтвердить с помощью']/..//span"
+                  customType="ru.aplana.autotests.CustomElements.CustomBox"/>
+        <TextInput name="Город приобретаемой недвижимости"/>
+        <Button name="Submit" locator="//button[@type='submit']"/>
+        <Collection name="Варики" locator="//div[@name='acceptSalary']/div/div">
+            <Button name="name" locator="."/>
+        </Collection>
+    </Page>
+</Pages>
