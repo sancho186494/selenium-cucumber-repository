@@ -1,5 +1,4 @@
 import com.aplana.chameleon.ChameleonCucumberRunner;
-import com.aplana.chameleon.elements.selenium.Button;
 import cucumber.api.CucumberOptions;
 import org.junit.runner.RunWith;
 

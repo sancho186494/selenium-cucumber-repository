@@ -27,21 +27,6 @@ public class CustomInput extends WebElementFacade {
                 e.printStackTrace();
             }
         }
-
-//        for (int j = 0; j < 5; j++) {
-//            this.getWrappedElement().clear();
-//            for (int i = 0; i < value.length(); i++) {
-//                this.getWrappedElement().sendKeys(String.valueOf(value.charAt(i)));
-//                try {
-//                    Thread.sleep(10);
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//            this.getWrappedElement().sendKeys(Keys.TAB);
-//            if (this.getWrappedElement().getAttribute("value").equals(keysToSend.toString()))
-//                break;
-//        }
     }
 
     @Override
